@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h2>Audit history</h2><section class="panel"><table><tr><th>Audit ID</th><th>Incident</th><th>Action</th><th>Time</th><th>Details</th></tr>{% for r in rows %}<tr>{% for v in r %}<td>{{v}}</td>{% endfor %}</tr>{% endfor %}</table></section>{% endblock %}
